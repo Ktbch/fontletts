@@ -37,15 +37,24 @@ export const InfoSection = () => {
     return (
         <Wrapper>
             <div className="border border-l-0 border-r-0">
-                <div className="flex flex-col items-center lg:flex-row lg:items-start gap-5 ">
-                    <div className="flex flex-col items-center  lg:flex-row lg:items-start gap-5 p-5 pt-14">
-                        <img src={logo} alt="" className="text-white " />
-                        <p className="font-light text-[14px] text-white text-wrap text-center lg:text-start">
-                            SINC Partners is a service <p>incubation
-                                company connecting</p> <p>experts in
-                                    product development</p> <p>and growth marketing willing
-                                        to offer</p> their services to amazing startups in exchange <p>for minuteequity (usually 0.5%to2%)</p>
-                        </p>
+                <div className="flex flex-col items-center lg:flex-row lg:items-start gap-3 ">
+                    <div className="grid grid-cols-1 items-center  lg:grid-cols-5 lg:items-start py-24 gap-3  pt-14">
+                        <div className="">
+                            <div className="justify-center">
+                                <img src={logo} alt="" className="text-white " />
+                            </div>
+                            <div className="font-light text-[14px] text-white text-wrap text-center lg:text-start">
+                                <p>
+                                    SINC Partners is a service incubation
+                                </p>
+                                <p>company connecting experts in</p>
+                                <p>
+                                    product developmentand growth marketing willing
+                                </p >
+                                <p>to offer their services to amazing startups in exchange for minuteequity (usually 0.5%to2%)</p>
+                            </div >
+
+                        </div>
                         {infoContent.map((content, index) => (
                             <div key={index}>
                                 <h1 className="text-[18px] font-medium text-white text-center lg:text-start">{content.heading}</h1>

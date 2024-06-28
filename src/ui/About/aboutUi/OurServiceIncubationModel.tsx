@@ -45,8 +45,8 @@ export const OurServiceIncubationModel = () => {
             />
             <SubHeading headerText="Hypothesis" headerParagraph="Just a few reasons we know its time for this model within the ecosystem" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {ourServiceIncubationModelContent.map((content) => (
-                    <Card styles="items-start gap-[16px] p-[16px] lg:p-[20px] " >
+                {ourServiceIncubationModelContent.map((content, index) => (
+                    <Card styles="items-start gap-[16px] p-[16px] lg:p-[20px] " key={index} >
                         <img src={content.img} alt="" />
                         <p className="font-normal text-[15px] lg:text-[17px] text-textColor2">
                             {content.content}
@@ -59,8 +59,8 @@ export const OurServiceIncubationModel = () => {
                 headerParagraph="See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time"
             />
             <div className="flex flex-col lg:flex-row items-center gap-[12px]">
-                {badgesText.map((badges) => (
-                    <button className=" px-[32px] w-[286px] border-[0.5px] py-[12px] rounded-[24px] bg-white text-start text-textColor1">
+                {badgesText.map((badges, index) => (
+                    <button key={index} className=" px-[32px] w-[286px] border-[0.5px] py-[12px] rounded-[24px] bg-white text-start text-textColor1">
                         {badges}
                     </button>
                 ))}

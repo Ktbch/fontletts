@@ -1,4 +1,3 @@
-import { Button } from "../../components/Button"
 import { Wrapper } from "../About/components/Wrapper"
 
 export const NewsLetter = () => {
@@ -10,7 +9,7 @@ export const NewsLetter = () => {
                         Newsletter
                     </h1>
                     <p className="text-[13px] lg:text-[16px] text-center lg:text-start text-white text-wrap font-normal">
-                        Get the latest about SINC Partners, our startup Incubator program, Portfolio <p>company offerings - straight into your inbox.</p>
+                        Get the latest about SINC Partners, our startup Incubator program, Portfolio, company offerings - straight into your inbox.
                     </p>
                 </div>
                 <div className="flex flex-col items-center lg:items-start gap-[10px] justify-center lg:relative">

@@ -123,8 +123,8 @@ export const SincInvestorsNetwork = () => {
                             <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0" key={index}>
                                 <h1 className="text-[18px] text-textColor1 font-medium">{content.heading}</h1>
                                 <ul className="flex flex-col items-start gap-3">
-                                    {content.dealList.map((list) => (
-                                        <li className="text-[13px] font-normal">
+                                    {content.dealList.map((list, index) => (
+                                        <li className="text-[13px] font-normal" key={index}>
                                             {list}
                                         </li>
                                     ))}
@@ -143,8 +143,8 @@ export const SincInvestorsNetwork = () => {
                             <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0" key={index}>
                                 <h1 className="text-[18px] text-textColor1 font-medium">{content.heading}</h1>
                                 <ul className="flex flex-col items-start gap-3">
-                                    {content.dealList.map((list) => (
-                                        <li className="text-[13px] font-normal">
+                                    {content.dealList.map((list, index) => (
+                                        <li className="text-[13px] font-normal" key={index}>
                                             {list}
                                         </li>
                                     ))}

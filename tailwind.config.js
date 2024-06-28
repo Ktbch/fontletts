@@ -13,8 +13,9 @@ export default {
         'textColor2': '#4E4E4E',
         'buttonColorBlue': '#20888F',
         'buttonColorBlack': '#303030',
-
-
+      },
+      fontFamily: {
+        matter: ['matter', 'sans-serif']
       }
     },
   },
