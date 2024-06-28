@@ -37,30 +37,32 @@ export const InfoSection = () => {
     return (
         <Wrapper>
             <div className="border border-l-0 border-r-0">
-                <div className="flex flex-col items-center lg:flex-row lg:items-start gap-3 ">
-                    <div className="grid grid-cols-1 items-center  lg:grid-cols-5 lg:items-start py-24 gap-3  pt-14">
-                        <div className="">
-                            <div className="justify-center">
-                                <img src={logo} alt="" className="text-white " />
+                <div className="flex flex-col items-center lg:flex-row lg:items-start gap-1 ">
+                    <div className="grid grid-cols-1 items-center lg:grid-cols-5 lg:items-start  gap-5  pt-12">
+                        <div className="justify-center">
+                            <div className="pl-64 lg:pl-0">
+                                <h1 className="text-center lg:text-start">
+                                    <img src={logo} alt="" className="text-center" />
+                                </h1>
                             </div>
-                            <div className="font-light text-[14px] text-white text-wrap text-center lg:text-start">
-                                <p>
+                            <div className="font-light text-[14px]  text-white text-wrap text-center lg:text-start">
+                                <p className="py-2">
                                     SINC Partners is a service incubation
                                 </p>
-                                <p>company connecting experts in</p>
-                                <p>
+                                <p className="py-2">company connecting experts in</p>
+                                <p className="py-2">
                                     product developmentand growth marketing willing
                                 </p >
-                                <p>to offer their services to amazing startups in exchange for minuteequity (usually 0.5%to2%)</p>
+                                <p className="py-2"> to offer their services to amazing startups in exchange for minuteequity (usually 0.5%to2%)</p>
                             </div >
 
                         </div>
                         {infoContent.map((content, index) => (
-                            <div key={index}>
-                                <h1 className="text-[18px] font-medium text-white text-center lg:text-start">{content.heading}</h1>
+                            <div key={index} className="">
+                                <h1 className="text-[18px] font-medium text-white text-center lg:text-start py-2">{content.heading}</h1>
                                 <div className="flex flex-col items-center lg:items-start">
                                     {content.content.map((con, index) => (
-                                        <span key={index} className="text-[16px] font-normal text-[#C9C9C9]">{con}</span>
+                                        <span key={index} className="text-[16px] font-normal text-[#C9C9C9] py-2">{con}</span>
                                     ))}
                                 </div>
                             </div>

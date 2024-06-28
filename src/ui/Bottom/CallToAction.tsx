@@ -8,7 +8,7 @@ export const CallToAction = () => {
                 Let's build companies that help everyone succeed
             </h1>
             <div className='flex flex-col lg:flex-row items-center gap-5 justify-center'>
-                <Button color='bg-buttonColorBlue'>SINC With Us</Button>
+                <Button color='bg-transparent border border-textColor1'><span className="text-textColor1">SINC With Us</span></Button>
                 <Button color='bg-buttonColorBlack'>Apply to SIP 1.0</Button>
             </div>
         </Wrapper>
