@@ -27,8 +27,8 @@ export const OurConceptInovations = () => {
                 headerParagraph="We have proprietary concept innovations that will support the startup ecosystem, support solution-providers/entrepreneurs and ultimately help democratize success;"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-                {ourConceptInovation.map((concept) => (
-                    <Card styles="items-center gap-[16px] md:gap-[36px] px-[20px] px-[16px]" >
+                {ourConceptInovation.map((concept, index) => (
+                    <Card styles="items-center gap-[16px] md:gap-[36px] px-[20px] px-[16px]" key={index} >
                         <h1 className=" font-bold text-[18px] md:text-[22px] text-textColor1">{concept.conceptHeading}</h1>
                         <p className="font-normal text-[14px] md:text-[18px] text-[#4E4E4E] text-center">{concept.conceptParagraph}</p>
                     </Card>

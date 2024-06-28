@@ -20,8 +20,8 @@ export const StartUpScaleUI = () => {
             <div className="hidden md:flex flex-col items-center gap-[32px]">
                 <h1 className="font-medium text-[56px] text-center text-textColor1">Network of builders helping startup scale</h1>
                 <div className="grid  grid-cols-2 gap-[32px] content-center">
-                    {cardContent.map((content) => (
-                        <Card styles="gap-[20px] items-start ">
+                    {cardContent.map((content, index) => (
+                        <Card styles="gap-[20px] items-start " key={index}>
                             <h1 className="font-medium lg:text-[24px] text-black">{content.cardHeading}</h1>
                             <p className="font-normal text-[17px] text-textColor2">{content.cardContent1}</p>
                             <p className="font-semibold text-[17px] text-textColor2">{content.cardContent2}</p>

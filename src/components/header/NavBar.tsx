@@ -10,8 +10,8 @@ export const NavBar = () => {
                 <div className={`flex items-center gap-[24px]`}>
                     <img src={logo} alt="" />
                     <ul className={` hidden lg:flex items-center gap-5 `}>
-                        {navItems.map((items) => (
-                            <li className='text-[18px] font-medium cursor-pointer'>{items}</li>
+                        {navItems.map((items, index) => (
+                            <li className='text-[18px] font-medium cursor-pointer' key={index}>{items}</li>
                         ))}
                     </ul>
                 </div>

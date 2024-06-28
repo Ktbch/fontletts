@@ -119,8 +119,8 @@ export const SincInvestorsNetwork = () => {
                         <span className="font-semibold">Micro Angel Investors & Service incubators</span> (Invest from $500 & above)
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                        {sincInvestorsContent1.map((content) => (
-                            <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0">
+                        {sincInvestorsContent1.map((content, index) => (
+                            <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0" key={index}>
                                 <h1 className="text-[18px] text-textColor1 font-medium">{content.heading}</h1>
                                 <ul className="flex flex-col items-start gap-3">
                                     {content.dealList.map((list) => (
@@ -139,8 +139,8 @@ export const SincInvestorsNetwork = () => {
                         <span className="font-semibold">Angel Investors & Venture Capital</span> (Invest from $50k & above)
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                        {sincInvestorsContent.map((content) => (
-                            <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0">
+                        {sincInvestorsContent.map((content, index) => (
+                            <div className=" flex flex-col items-start gap-[12px] p-[20px] border border-l-0 border-r-0" key={index}>
                                 <h1 className="text-[18px] text-textColor1 font-medium">{content.heading}</h1>
                                 <ul className="flex flex-col items-start gap-3">
                                     {content.dealList.map((list) => (

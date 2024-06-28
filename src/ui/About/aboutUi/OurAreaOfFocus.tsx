@@ -36,8 +36,8 @@ export const OurAreaOfFocus = () => {
                 support solution-providers/entrepreneurs and ultimately help democratize success;
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 ">
-                {ourAreaOfFocusCarContent.map((areaOfFocus) => (
-                    <div className={`flex flex-col items-start p-[20px] h-[160px] justify-between ${areaOfFocus.color}`}>
+                {ourAreaOfFocusCarContent.map((areaOfFocus, index) => (
+                    <div className={`flex flex-col items-start p-[20px] h-[160px] justify-between ${areaOfFocus.color}`} key={index}>
                         <p className="font-normal text-[16px] lg:text-[20px] text-white">{areaOfFocus.numebr}</p>
                         <p className="font-normal text-[16px] lg:text-[20px] text-white">{areaOfFocus.areaFocus}</p>
                     </div>

@@ -71,8 +71,8 @@ export const EquityJobs = () => {
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
-                {equityJobsContent.map((content) => (
-                    <div className="flex flex-col p-[20px] gap-[24px] rounded-[12px] bg-white">
+                {equityJobsContent.map((content, index) => (
+                    <div className="flex flex-col p-[20px] gap-[24px] rounded-[12px] bg-white" key={index}>
                         <img src={content.logoHeading} alt="" width={118.52} height={64} />
                         <p className="font-normal text-[14px] text-textColor1">
                             {content.paragraph}

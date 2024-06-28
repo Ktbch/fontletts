@@ -26,8 +26,8 @@ export const BlogsResources = () => {
         <Wrapper >
             <AboutHeader headerText='Blogs & Resources' style='pb-16' />
             <div className='grid grid- cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[48px]'>
-                {blogresourceContent.map((content) => (
-                    <div className='flex flex-col items-start gap-[15px]'>
+                {blogresourceContent.map((content, index) => (
+                    <div className='flex flex-col items-start gap-[15px]' key={index}>
                         <img src={content.headingImage} alt='' />
                         <div className='flex items-center gap-5'>
                             <div className='flex flex-col items-start' >
