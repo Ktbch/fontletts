@@ -40,7 +40,7 @@ export const InfoSection = () => {
                 <div className="flex flex-col items-center lg:flex-row lg:items-start gap-1 ">
                     <div className="grid grid-cols-1 items-center lg:grid-cols-5 lg:items-start  gap-5  pt-12">
                         <div className="justify-center">
-                            <div className="pl-[120px] lg:pl-0">
+                            <div className="pl-[119px] lg:pl-0">
                                 <h1 className="text-center lg:text-start">
                                     <img src={logo} alt="" className="text-center" />
                                 </h1>
